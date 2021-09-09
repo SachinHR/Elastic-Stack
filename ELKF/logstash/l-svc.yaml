@@ -19,6 +19,4 @@ spec:
   selector:
     app: logstash-logstash
   sessionAffinity: None
-  type: ClusterIP
-status:
-  loadBalancer: {}
+  type: LoadBalancer
