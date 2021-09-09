@@ -4,15 +4,12 @@ metadata:
   annotations:
     meta.helm.sh/release-name: kibana
     meta.helm.sh/release-namespace: default
-  creationTimestamp: "2021-09-08T04:22:29Z"
   labels:
     app: kibana
     heritage: Helm
     release: kibana
   name: kibana-kibana
   namespace: default
-  resourceVersion: "173585"
-  uid: b838dcb6-1228-4ed1-9c3e-3346f708593c
 spec:
   #clusterIP: 10.103.246.12
   #clusterIPs:
