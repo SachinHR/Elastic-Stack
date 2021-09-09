@@ -1,14 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    meta.helm.sh/release-name: kibana
-    meta.helm.sh/release-namespace: default
   generation: 1
   labels:
     app: kibana
-    heritage: Helm
-    release: kibana
   name: kibana-kibana
   namespace: default
 spec:
@@ -18,7 +13,6 @@ spec:
   selector:
     matchLabels:
       app: kibana
-      release: kibana
   strategy:
     type: Recreate
   template:
@@ -26,7 +20,6 @@ spec:
       creationTimestamp: null
       labels:
         app: kibana
-        release: kibana
     spec:
       containers:
       - env:
