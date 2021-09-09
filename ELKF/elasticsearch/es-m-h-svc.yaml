@@ -8,9 +8,6 @@ metadata:
   name: elasticsearch-master-headless
   namespace: default
 spec:
-  clusterIP: None
-  clusterIPs:
-  - None
   ports:
   - name: http
     port: 9200
