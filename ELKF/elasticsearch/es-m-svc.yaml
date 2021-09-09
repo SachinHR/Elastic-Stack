@@ -9,6 +9,9 @@ metadata:
   name: elasticsearch-master
   namespace: default
 spec:
+  clusterIP: 10.103.252.145
+  clusterIPs:
+  - 10.103.252.145
   ports:
   - name: http
     port: 9200
@@ -23,4 +26,6 @@ spec:
     chart: elasticsearch
     release: elasticsearch
   sessionAffinity: None
-  type: LoadBalancer
+  type: ClusterIP
+status:
+  loadBalancer: {}
