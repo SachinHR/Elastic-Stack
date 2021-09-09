@@ -26,6 +26,4 @@ spec:
     chart: elasticsearch
     release: elasticsearch
   sessionAffinity: None
-  type: ClusterIP
-status:
-  loadBalancer: {}
+  type: LoadBalancer
