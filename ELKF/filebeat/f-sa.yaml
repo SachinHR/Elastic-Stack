@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  labels:
+    app: filebeat-filebeat
+    chart: filebeat-7.14.0
+    release: filebeat
+  name: filebeat-filebeat
+  namespace: default
+secrets:
+- name: filebeat-filebeat-token-rp9v4
