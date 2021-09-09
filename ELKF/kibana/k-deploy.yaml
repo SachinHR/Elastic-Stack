@@ -5,7 +5,6 @@ metadata:
     deployment.kubernetes.io/revision: "1"
     meta.helm.sh/release-name: kibana
     meta.helm.sh/release-namespace: default
-  creationTimestamp: "2021-09-08T04:22:29Z"
   generation: 1
   labels:
     app: kibana
@@ -13,8 +12,6 @@ metadata:
     release: kibana
   name: kibana-kibana
   namespace: default
-  resourceVersion: "175208"
-  uid: e4c0b82a-8a28-46c1-86ca-f0cd987ca485
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
