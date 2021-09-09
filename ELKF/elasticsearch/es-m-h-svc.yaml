@@ -24,6 +24,4 @@ spec:
   selector:
     app: elasticsearch-master
   sessionAffinity: None
-  type: ClusterIP
-status:
-  loadBalancer: {}
+  type: LoadBalancer
